@@ -1,0 +1,2 @@
+# food-image-classifier
+Image classifier for Food101 dataset. We explore AlexNet, EfficientNet and ViT architectures. Gradio demo with EfficientNet deployed on Hugging Face Spaces.
