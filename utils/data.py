@@ -5,9 +5,6 @@ import torchvision
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 
-import matplotlib.pyplot as plt
-import numpy as np
-
 import os
 import requests
 from pathlib import Path
