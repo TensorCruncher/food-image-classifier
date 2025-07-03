@@ -7,7 +7,7 @@ We choose to proceed with EffNetB2 for the 101 class dataset due to its small mo
 
 Finally, we deploy a gradio demo with the main EfficientNetB2 model on [Hugging Face Spaces](https://huggingface.co/spaces/TensorCruncher/foodImageClassifier).
 
-# Possible extensions
+# Scope for improvement
 We could do an analysis of the performance of the final model using a confusion matrix. This is important since the EffNetB2 test accuracy goes from high 80s to about 60% as we move from the 3 class dataset to the 101 class dataset.
 
 This could imply that the EffNetB2 architecture cannot capture the complexities of the 101 classes well enough.
@@ -20,3 +20,8 @@ Possible improvements can be:
 * Better data augmentation
 * Possibly try different versions of EffNet, such as B3 - B7 (although that would take longer to train)
 * Training for further epochs (>10) is not recommended for B2 since the loss appears to plateau by then.
+
+# Project extensions
+We can train another neural net to predict if an image is of food or not. If the image is of food, we can then pass it to our model to classify it as one of the Food101 categories.
+
+This assumes that images of food supplied to the model at test time are from the Food101 list of foods.
